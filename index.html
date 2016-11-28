@@ -26,23 +26,32 @@
           <div class="section">
               <div class="container">
                   <div class="text">
-                      <p>Enter a number to see if you are a ping pong, ping  or pong</p> 
-              </div>
-              <form id="ping-pong" class="form">
-                  <div class="form-group">
-                      <label for="number">Enter a number:</label>
-                      <input id="number" type="text">
+                      <p>Enter a number to see if you are a ping pong, ping  or pong that will count your number from 1 with exception from the following:</p>
+                      <ol>
+                          <li>number divisible by 3  become "ping"</li>
+                          <li>number divisible by 5 become "pong"</li>
+                          <li>number divisible by both 3 and 5 become "pingpong"</li>
+                      </ol>
                   </div>
-                  <button type="submit" class="btn">ping pong!</button>
-              </form>
+                  <form id="Pong">
+                      <div class="form-group">
+                          <label for="number">Enter a number</label>
+                          <input id="number" type="text">
+                      </div>
+                      <button type="submit" class="btn btn-primary btn-lg">ping pong!</button>
+                  </form>
               </div>
-                  <div id="result">
-                  </div>
-              
+              <div>
+              <ul id="output">
+                  </ul>
           </div>
-
-                  <script src="js/jquery.js"></script>
-                  <script src="js/scripts.js"></script>
+          <script src="js/bootstrap.min.js"></script>
+          <script src="js/jquery-3.1.1.js"></script>
+          <script src="js/scripts.js"></script>
         
       </body>
 </html>
+
+
+
+

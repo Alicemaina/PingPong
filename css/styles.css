@@ -1,3 +1,6 @@
+body{
+    background-color: greenyellow;
+}
 .jumbotron {
     text-align: center;
     background: #008080;
@@ -11,5 +14,5 @@
 .section{
     margin-right: 25%;
     margin-left: 25%;
-    background-color: greenyellow;
+    
 }

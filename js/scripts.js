@@ -1,35 +1,28 @@
-var pingPong = function(number) {
-    newPingPong.type()
-    return newPing;
-  };
-var pingPong = function(number) {
-    if (number % 3 === 0) {
-        newPing.type()
-        return newPing;
-    }
-    if (number % 5 === 0){
-       newPing.type()
-       return newPong;
-    }
-    if (number % 15 === 0){
-        newPingPong.type()
-        return newPingPong;
-} else {
-      return ("ms");
-    }
-  };
+//javascript function for business logic
 
-    $(document).ready(function() {
-        $("form") .submit(function(event) {
-            event.preventDefault();
-            
-            var numberinput = $("input#number") .val();
-            
-            var inputs = [numberInput];
+var numbersToBePingponged = [];
+var pingPong = function (number) {
+    for (var index = 1; index <=number; index+=1) {
+        if(index  % 15 === 0){
+            numbersToBePingponged.push("pingpong");
+        }else if (index % 5 === 0){
+            numbersToBePingponged.push("pong");
+        }else if (index % 3 ===0){
+            numbersToBePingponged.push("ping");
+        }else{
+            numbersToBePingponged.push(index);
+        }
+    }
+};
+
+//jquery for front-end logic.
+$(document).ready(function() {
+    $("form#Pong").submit(function() {
+        event.preventDefault();
+        var number= parseInt($("input#number").val());
+        pingPong(number);
+        numbersToBePingponged.forEach(function (number) {
+            $("#output").append('<li>' + number + "</li>");
+        });
     });
-     
-            var year = parseInt($("input#number") .val());
-            var result = pingPong(number);
-            $("#result-out").text(result);
-});    
-       
+});
