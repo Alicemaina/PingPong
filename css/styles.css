@@ -1,3 +1,15 @@
-#result {
-    display: none;
+.jumbotron {
+    text-align: center;
+    background: #008080;
+}
+.section1 {
+    float: left;
+    width: 22%;
+    height: 100%;
+    background-color: aqua;
+}
+.section{
+    margin-right: 25%;
+    margin-left: 25%;
+    background-color: greenyellow;
 }

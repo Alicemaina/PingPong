@@ -15,16 +15,21 @@ var pingPong = function(number) {
         newPingPong.type()
         return newPingPong;
 } else {
-      return newPingPong;
+      return ("ms");
     }
   };
 
-    $(document).ready(function(){
-    $("#ping-pong form") .submit(function(event) {
-      event.preventDefault();
-      var year = parseInt($("input#number") .val());
-      var result = pingPong(number);
-      $("#result").text(result);
+    $(document).ready(function() {
+        $("form") .submit(function(event) {
+            event.preventDefault();
+            
+            var numberinput = $("input#number") .val();
+            
+            var inputs = [numberInput];
     });
+     
+            var year = parseInt($("input#number") .val());
+            var result = pingPong(number);
+            $("#result-out").text(result);
 });    
        
